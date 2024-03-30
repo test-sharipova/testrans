@@ -1,0 +1,78 @@
+.promo {
+    height: calc(100vh - 133px);
+    max-height: 1000px;
+    background-color: #2a5add;
+    background-image: 
+        image-set(url("../img/promo-img.webp") type("image/webp"), 
+        url("../img/promo-img.jpg") type("image/jpg"));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction:  column;
+        padding-left: 24px;
+    }
+    &__title {
+        margin: 0;
+        font-weight: 800;
+        font-size: 44px;
+        font-family: 'Raleway', sans-serif;
+        flex-grow: 1;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(155px, 1fr));
+        gap: 10px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: rgb(22 47 114 / 65%);
+        padding-left: 0px;
+        padding-right: 0px;
+        padding: 20px;
+        transition: background-color .3s;
+        &:hover {
+            background-color: rgb(22 47 114 / 80%);
+        }
+    }
+    &__icon {
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        width: 69px;
+        height: 42px;
+        background-color: #ffffff;
+        display: block;
+        margin: 0 auto;
+        &_1 {
+            mask-image: url(../img/icons/promo-icon1.svg);
+        }
+        &_2 {
+            mask-image: url(../img/icons/promo-icon2.svg);
+        }
+        &_3 {
+            mask-image: url(../img/icons/promo-icon3.svg);
+        }
+        &_4 {
+            mask-image: url(../img/icons/promo-icon4.svg);
+        }
+        &_5 {
+            mask-image: url(../img/icons/promo-icon5.svg);
+        }
+    }
+    &__text {
+        font-size: 18px;
+        font-weight: 700;
+        display: block;
+        margin-top: 10px;
+    }
+}

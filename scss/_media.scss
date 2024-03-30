@@ -1,0 +1,102 @@
+@media screen and (max-width:1023px) {
+    .promo {
+        &__wrapper {
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+        }
+        &__item {
+            scroll-snap-align: start;
+        }
+    }
+    
+}
+@media screen and (max-width:767px) {
+    .container {
+        width: 100%;
+        padding: 0 16px;
+    }
+    header {
+        background-size: 100%;
+    }
+    .header {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+        &__contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .promo {
+        padding-top: 20px;
+        background: #fff;
+        height: auto;
+        max-height: auto;
+        &__title {
+            width: 1px;
+            height: 1px;
+            clip: rect(0, 0, 0, 0);
+            opacity: 0;
+            margin: -1px;
+            position: absolute;
+        }
+        .container {
+            padding-left: 16px;
+        }
+        &__wrapper {
+            overflow-x: hidden;
+            grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+        }
+        
+        &__item {
+            background-color: #fff;
+            &:hover {
+                background-color: #fff;
+            }
+
+        }
+        &__icon {
+            
+            mask: none;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 85px;
+            &_1 {
+                background-image: url(../img/icons/serv2.png);
+            }
+            &_2 {
+                background-image: url(../img/icons/serv1.png);
+            }
+            &_6 {
+                background-image: url(../img/icons/serv3.png);
+            }
+            &_7 {
+                background-image: url(../img/icons/serv4.png);
+            }
+            &_8 {
+                background-image: url(../img/icons/serv5.png);
+            }
+            &_9 {
+                background-image: url(../img/icons/serv6.png);
+            }
+        }
+        &__text {
+            color: #333;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 148%;
+        }
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}
