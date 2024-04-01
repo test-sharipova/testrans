@@ -3,7 +3,8 @@
     max-height: 1000px;
     background-color: #2a5add;
     background-image: 
-        image-set(url("../img/promo-img.webp") type("image/webp"), 
+        image-set(
+        url("../img/promo-img.webp") type("image/webp"), 
         url("../img/promo-img.jpg") type("image/jpg"));
     background-position: center;
     background-repeat: no-repeat;
