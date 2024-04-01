@@ -2,10 +2,13 @@
     height: calc(100vh - 133px);
     max-height: 1000px;
     background-color: #2a5add;
+    background-image: url(../img/promo-img.jpg);
+    background-image: url(../img/promo-img.jpg);
     background-image: 
         image-set(
         url("../img/promo-img.webp") type("image/webp"), 
         url("../img/promo-img.jpg") type("image/jpg"));
+        
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
